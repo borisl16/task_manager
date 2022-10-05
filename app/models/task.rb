@@ -1,5 +1,5 @@
 class Task < ApplicationRecord
     
-    belongs_to :category_id, optional: true
+    belongs_to :category, optional: true
 
 end

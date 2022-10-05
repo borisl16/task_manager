@@ -3,8 +3,10 @@
 <p>Hello, I am <%= @created_by %></p>
 <p>You can find my tasks below:</p>
 
-<a href="/tasks/index">Task 1 </a><br />
-<%= link_to('Task 2', { controller: 'tasks', action: 'index' }) %><br />
+<%= link_to('Categories', categories_path) %><br />
+
+<%= link_to('Tasks', tasks_path(page: 1)) %><br />
+<%= link_to('About', about_path) %><br />
 
 
 
